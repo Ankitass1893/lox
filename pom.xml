@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.secor</groupId>
     <artifactId>lox</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>prod-1</version>
     <name>lox</name>
     <description>lox</description>
     <url/>
@@ -52,6 +52,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
