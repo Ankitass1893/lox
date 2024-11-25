@@ -80,8 +80,8 @@
     };
 
     // Populate user data in the HTML
-    document.getElementById('firstName').textContent = userData.firstName;
-    document.getElementById('lastName').textContent = userData.lastName;
+    document.getElementById('firstName').textContent = userData.fname;
+    document.getElementById('lastName').textContent = userData.lname;
     document.getElementById('phone').textContent = userData.phone;
     document.getElementById('email').textContent = userData.email;
     document.getElementById('city').textContent = userData.city;
@@ -101,7 +101,9 @@
         userData.country = document.getElementById('countryInput').value;
         userData.username = document.getElementById('username').value;
 
-        const url = '/api/v1/update/user/details'; // Replace with your backend URL
+        console.log(userData);
+
+        const url = '/api/v1/update/user/details'; // Replace with your backend URI
 
         const xhr = new XMLHttpRequest();
         xhr.open('POST', url, true);
