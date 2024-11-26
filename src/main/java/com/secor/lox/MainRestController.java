@@ -20,7 +20,6 @@ public class MainRestController {
        Response response = new Response();
        response.setResponseText("User details updated successfully");
        return response;
-
    }
 
 

@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Personal Details</h5>
                     <p class="card-text">
-                        <strong>Username:</strong> <span th:text="${username}" id="username">&nbsp;</span><br>
+                        <strong>Username:</strong> <span th:text="${username}" id="username"></span><br>
                         <strong>First Name:</strong> <span id="firstName">&nbsp;</span><br>
                         <strong>Last Name:</strong> <span id="lastName">&nbsp;</span><br>
                         <strong>Phone:</strong> <span id="phone">/&nbsp;</span><br>
@@ -93,13 +93,13 @@
         event.preventDefault(); // Prevent form submission
 
         // Update user data with form values
+        userData.username = document.getElementById('username').value;
         userData.fname = document.getElementById('firstNameInput').value;
         userData.lname = document.getElementById('lastNameInput').value;
         userData.phone = document.getElementById('phoneInput').value;
         userData.email = document.getElementById('emailInput').value;
         userData.city = document.getElementById('cityInput').value;
         userData.country = document.getElementById('countryInput').value;
-        userData.username = document.getElementById('username').value;
 
         console.log(userData);
 
